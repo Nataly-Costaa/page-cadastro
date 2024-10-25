@@ -66,6 +66,10 @@ body {
     height: 85vh;
 }
 
+#formulario #infoAluno label {
+    font-weight: 500;
+}
+
 #formulario #infoAluno input {
     width: 26vw;
     height: 7vh;

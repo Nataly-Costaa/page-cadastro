@@ -33,7 +33,7 @@
     width: 30vw;
     height: 45vh;
     font-weight: 500;
-    background-color: var(--color2);
+    background-color: var(--color10);
     border-radius: 8px;
     box-shadow: #63636333 0px 2px 8px 0px;
 }
@@ -57,11 +57,11 @@
 }
 
 #lista-cadastro #container #botoes #edit {
-    background-color: var(--color8);
+    background-color: var(--color2);
     transition: .3s ease-in-out;
 }
 #lista-cadastro #container #botoes #edit:hover {
-    background-color: var(--color10);
+    background-color: var(--color3);
     transition: .3s ease-in-out;
 }
 
@@ -71,6 +71,6 @@
 }
 
 #lista-cadastro #container #botoes #delet:hover {
-    background-color: var(--color9);
+    background-color: var(--color8);
     transition: .3s ease-in-out;
 }
