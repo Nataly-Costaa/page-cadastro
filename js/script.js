@@ -13,6 +13,8 @@ const container = document.getElementById('container');
 const mensagemSemCadastro = document.getElementById('mensagemSemCadastro');
 const cards = document.getElementById('cards');
 
+let alunos = [];
+
 class Aluno {
     constructor(nome, email, idade, cpf, numeroMatricula, curso) {
         this.nome = nome;
@@ -31,13 +33,12 @@ class Aluno {
         spans[4].innerText = this.numeroMatricula;
         spans[5].innerText = this.curso;
         
-        mensagemSemCadastro.style.display = 'none';
         container.style.display = 'flex';
     }
 }
 
 buttonSubmit.addEventListener('click', () => {
-    const alunoCadastrado1 = new Aluno(
+    const alunoCadastrado = new Aluno(
         infoAluno.nome.value,
         infoAluno.email.value,
         infoAluno.idade.value,
@@ -46,5 +47,21 @@ buttonSubmit.addEventListener('click', () => {
         infoAluno.curso.value,
     );
 
-    alunoCadastrado1.exibirCadastroAluno();
+    alunos.push(alunoCadastrado);
+
+    infoAluno.nome.value = '';
+    infoAluno.email.value = '';
+    infoAluno.idade.value = '';
+    infoAluno.cpf.value = '';
+    infoAluno.numeroMatricula.value = '';
+    infoAluno.curso.value = 'espanhol';
+
+    container.innerHTML = "";
+    for (const aluno of alunos) {
+        aluno.exibirCadastroAluno();
+        const novoCard = cards.cloneNode(true);
+        container.appendChild(novoCard);
+    }
+
+  mensagemSemCadastro.style.display = 'none';
 });
