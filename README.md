@@ -52,3 +52,10 @@ Abaixo estão os detalhes de cada arquivo que compõe o projeto Speak'nLearn:
     - Escuta o evento de clique no botão de cadastro, validando os campos obrigatórios e adicionando o aluno à lista.
     - Implementa o comportamento de edição e exclusão diretamente nos cards de alunos.
 
+## Acesso ao Projeto
+
+O projeto está disponível online e pode ser acessado pelo seguinte link:
+
+[Speak'nLearn - Cadastro de Alunos](https://nataly-costaa.github.io/page-cadastro/)
+
+
